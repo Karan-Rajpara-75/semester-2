@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation Example</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+
+            /* Animation Properties */
+            animation-name: myanimation;
+            animation-duration: 6s;
+            animation-delay: 2s;                 /* 3. Delay of 2 seconds */
+            animation-iteration-count: infinite; /* 4. Run infinitely */
+            animation-direction: reverse;        /* 5. Reverse order */
+            animation-timing-function: ease-in-out; /* 6. Speed change */
+        }
+
+        @keyframes myanimation {
+
+            /* 1. Change background red to yellow */
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            /* 2. Move Left to Right */
+            25% {
+                background-color: yellow;
+                left: 300px;
+                top: 0px;
+            }
+
+            /* Right to Bottom */
+            50% {
+                left: 300px;
+                top: 300px;
+            }
+
+            /* Bottom to Left */
+            75% {
+                left: 0px;
+                top: 300px;
+            }
+
+            /* Left to Top */
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>

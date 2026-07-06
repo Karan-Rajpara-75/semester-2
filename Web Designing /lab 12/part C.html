@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Screensaver Animation</title>
+
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background-color: lime;
+            position: absolute;
+
+            animation: screensaver 6s linear infinite;
+        }
+
+        @keyframes screensaver {
+            0% {
+                left: 0;
+                top: 0;
+            }
+            25% {
+                left: 85%;
+                top: 0;
+            }
+            50% {
+                left: 85%;
+                top: 85%;
+            }
+            75% {
+                left: 0;
+                top: 85%;
+            }
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
