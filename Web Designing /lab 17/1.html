@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 17</title>
+</head>
+<style>
+    .navbar{
+        height: 8vh;
+        width: 100%;
+        background-color: rgb(57, 55, 55);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 12px;
+    }
+    .nav{
+        color: aliceblue;
+        text-decoration: none;   
+    }
+    .main{
+        height: 82vh;
+        width: 100%;
+        background-color: darkgray;
+    }
+    .box{
+        justify-content: center;
+        height: 12vh;
+        width: 100%;
+        display: flex;
+        font-size: xx-large;
+        padding-top: 12px;
+    }
+    .cont{
+        float: right;
+    }
+    .block{
+        border-radius: 12px;
+        border: 2px solid black;
+        height: 50vh;
+        width: 20vw;
+        float: left;
+        margin-top: 12px;
+        margin-left: 40px;
+    }
+    .top{
+        display: flex;
+        height: 23%;
+        width: 100%;
+        flex: 1;
+        background-color: darkgray;
+    }
+    .log{
+           float:left;
+           margin-top: -22px;
+           margin-left: 20px;
+           background-color: black;
+           color: white;
+           height: 50px;
+           width: 90px;
+           align-items: top;
+           display: flex;
+           justify-content: top;
+    }
+    h5::first-letter{
+        font-size: x-small;
+    }
+    .logs{
+        float:right;
+        padding-left: 70px;
+    }
+    .center{
+        display: flex;
+        height: 27%;
+        flex: 1;
+        background-color: aliceblue;
+    }
+    .last{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        background-color: yellow;
+    }
+    .right{
+        float: right;
+    }
+    .footer{
+        background-color: black;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+</style>
+<body>
+    <section>
+        <div class="navbar">
+            <a href="#" class="nav">The book series</a>
+            <a href="#" class="nav">Testimonials</a>
+            <a href="#" class="nav">The Author</a>
+            <a href="#" class="nav">Free resources</a>
+        </div>
+        <div class="main">
+            <div class="box">You don't know JavaScript</div>
+            <div class="block">
+                <div class="top">
+                    <div class="log"><h5>O'REILLY©</h5></div>
+                    <div class="logs">
+                    <p class="right" style="font-size: xx-small;">Lorem ipsum dolor sit,<br> amet consectetur adipisicing elit. <br> Perferendis eligendi necessitatibus</p>
+                    <h4 style="font-size: medium; padding-top: 50px;">KYLE SIMPSON</h4>
+                    </div>
+                </div>
+                <div class="center">
+                    <h2>COMPLETE</h2>
+                    <h2>SERIES</h2>
+                </div>
+                <div class="last">
+                    <h1>JS</h1>
+                    <div class="not">YOU DON'T KNOW</div>
+                </div>
+            </div>
+            <div class="cont">
+                <p>Don't just drift through Javascript.</p>
+                <p>Understand how Javascript works</p>
+                <p>Start your journey through the bumpy side of Javascript</p>
+                <button>ORDER YOUR COPY NOW</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="commant">The first ebook in the book series is absolutely free.</div>
+            <div class="hero"><button>FIND OUT MORE ABOUT THIS OFFER</button></div>
+        </div>
+    </section>
+</body>
+</html>
