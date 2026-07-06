@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 60vh;
+            background-color: aqua;
+        }
+        .header{
+            background-color: darkorchid;
+            padding-left: 10px;
+            
+        }
+        .content{
+            background-color:orange;
+            padding-left: 10px;
+            height: 40vh;
+            padding-right: 10px;
+        }
+        .footer{
+            background-color: blue;
+            height: 10%;
+            padding-left: 10px;
+        }
+        .Entryleft{
+          color: white;
+          background-color:orange;
+          height: 60;
+          float: left;
+          width: 40%;
+          
+        }
+        .Entryright{
+          color: white;
+          background-color: black;
+          height: 15vh;
+          float: right;
+          width: 40%;
+          margin-top: 5vh;
+          margin-right: 5vh;
+        }
+        @media screen and (max-width: 435px) {
+            
+        .Entryleft{
+          color: white;
+          background-color:orange;
+          height: 60;
+          float: none;
+          width: 100%;
+          
+        }
+        .Entryright{
+          color: white;
+          background-color: black;
+          height: 15vh;
+          float: none;
+          width: 60%;
+          margin-top: 5vh;
+          margin-right: 5vh;
+          
+        }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">page
+        <div class="header">header</div>
+        <div class="content">
+           <div class="Entryleft">
+            <div class="con" style="color: black;">content</div>
+            <div style="background-color: black;margin-bottom: 5%; margin-top: 5%;">Entry</div>
+            <div style="background-color: black;margin-bottom: 5%;">Entry</div>
+            <div style="background-color: black;margin-bottom: 5%;">Entry</div>
+           </div>
+           <div class="Entryright">
+            <div>Sidebar</div>
+           </div>
+        </div>
+         <div class="footer">@Darshan university</div>
+    </div>
+   
+    
+</body>
+</html>

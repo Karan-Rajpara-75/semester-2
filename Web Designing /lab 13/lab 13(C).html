@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Website Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background: #c62828;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        /* Main layout */
+        .main {
+            display: flex;
+            margin: 20px;
+            flex-wrap: wrap;   /* Responsive behavior */
+        }
+
+        .navigation {
+            width: 15%;
+            background: #2c3e99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            width: 55%;
+            background: #ffeb3b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 20%;
+            background: #0b6b3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background: #29b6f6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 22px;
+            margin: 20px;
+        }
+
+        /* 📱 Part-C Responsive Rule */
+        @media (max-width: 600px) {
+
+            .navigation,
+            .content,
+            .sidebar {
+                width: 100%;   /* All sections stacked */
+                margin-bottom: 10px;
+            }
+
+            .main {
+                margin: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="header">Header</div>
+
+<div class="main">
+    <div class="navigation">Navigation</div>
+    <div class="content">Content</div>
+    <div class="sidebar">Sidebar</div>
+</div>
+
+<div class="footer">Footer</div>
+
+</body>
+</html>

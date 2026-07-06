@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Darshan University</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            text-decoration: none;
+            margin: 10px;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Main layout */
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 20%;
+            background: red;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h3 {
+            border-bottom: 1px solid black;
+            padding: 10px 0;
+        }
+
+        /* Content */
+        .content {
+            width: 80%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 180px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Footer */
+        .footer {
+            background: blue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        /* 📱 Responsive for Mobile */
+        @media (max-width: 768px) {
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            .header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .menu {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/120px-Windows_logo_-_2012.svg.png" width="100">
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+    </div>
+</div>
+
+<hr>
+
+<!-- Main -->
+<div class="main">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Sidebar</h3>
+        <h3>Home</h3>
+        <h3>Placement</h3>
+        <h3>Recruitment</h3>
+        <h3>Faculty</h3>
+        <h3>News</h3>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+                <p>Arjun Bala<br>BE, MTech</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+                <p>Firoz Shreyasiya<br>BE, ME</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+                <p>Harsh Kansagara<br>L&T<br>4.5 Lac</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+                <p>Shyam Kantesariya<br>TCS<br>3.2 Lac</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581090700227-4c4f50c6d5b1">
+                <p>Jeet Dhamecha<br>Reliance<br>5.0 Lac</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    © Darshan University – Rajkot
+</div>
+
+</body>
+</html>
