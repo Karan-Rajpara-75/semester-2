@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .main{
+            height: 700px;
+            width: 700px;
+        }
+        .box1{
+            height: 12px;
+            width: 12px;
+            background-color: rgb(0, 0, 0);
+            animation: num 5s  2s infinite alternate both;
+            position: absolute;
+            z-index: 4;
+        }
+        .box2{
+            height: 12px;
+            width: 12px;
+            background-color: rgb(41, 40, 40);
+            animation: num 5s  2.04s infinite alternate both;
+            position: absolute;
+            z-index: 3;
+        }
+        .box3{
+            height: 12px;
+            width: 12px;
+            background-color: rgb(74, 73, 73);
+            animation: num 5s  2.08s infinite alternate both;
+            position: absolute;
+            z-index: 2;
+        }
+        .box4{
+            height: 12px;
+            width: 12px;
+            background-color: rgb(112, 110, 110);
+            animation: num 5s  2.12s infinite alternate both;
+            position: absolute;
+            z-index: 1;
+        }
+        .box5{
+            height: 12px;
+            width: 12px;
+            background-color: rgb(147, 146, 146);
+            animation: num 5s  2.16s infinite alternate both;
+            position: absolute;
+            z-index: 0;
+        }
+        @keyframes num{
+           0%{
+                margin-left: 0px;
+                margin-top: 0px;
+           }
+           25%{
+                margin-left: 0px;
+                margin-top: 150px;
+           }
+           50%{
+                margin-left: 150px;
+                margin-top: 150px;
+           }
+           75%{
+                margin-left: 150px;
+                margin-top: 0px;
+           }
+           100%{
+                margin-left: 0px;
+                margin-top: 0px;
+           }
+        }
+        .fex{
+            
+            margin-left: 1000px;
+            height: 400px;
+            width: 300px;
+            position: absolute;
+            z-index: -1;
+            background-color: rgb(255, 255, 255);
+        }
+        .block1{
+            background-color: blue;
+            color: rgb(255, 255, 255);
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            z-index: 0;
+            animation: fex1 5s 12s 1 reverse backwards;
+        }
+        .block2{
+            background-color: blueviolet;
+            color: rgb(255, 255, 255);
+             height: 200px;
+            width: 200px;
+            position: absolute;
+            z-index: 1;
+            margin-top: 100px;
+            margin-left: 100px;
+            animation: fex2 5s 10s 1 reverse backwards;
+            border-radius: 100px;
+            text-align: center;
+        }
+        .block3{
+            background-color: brown;
+            color: rgb(255, 255, 255);
+             height: 200px;
+            width: 200px;
+            position: absolute;
+            z-index: 0;
+            margin-top: 200px;
+            animation: fex3 5s 12s 1 reverse backwards;
+        }
+        .block4{
+            background-color: cornflowerblue;
+            color: rgb(255, 255, 255);
+             height: 200px;
+            width: 200px;
+            position: absolute;
+            z-index: 0;
+            margin-left: 200px;
+            animation: fex4 5s 12s 1 reverse backwards;
+            text-align: right;
+        }
+        .block5{
+            background-color: rgb(224, 61, 61);
+            color: rgb(255, 255, 255);
+             height: 200px;
+            width: 200px;
+            position: absolute;
+            z-index: 0;
+            margin-left: 200px;
+            margin-top: 200px;
+            animation: fex5 5s 12s 1 reverse backwards;
+            text-align: right;
+        }
+        @keyframes fex1{
+            from{
+                background-color: blue;
+            }
+            to{
+                background-color: rgb(255, 255, 255);
+            }
+        }
+         @keyframes fex2{
+            from{
+                background-color: blueviolet;
+            }
+            to{
+                background-color: rgb(255, 255, 255);
+            }
+        }
+         @keyframes fex3{
+            from{
+                background-color: brown;
+            }
+            to{
+                background-color: rgb(255, 255, 255);
+            }
+        }
+        @keyframes fex4{
+            from{
+                background-color: cadetblue;
+            }
+            to{
+                background-color: rgb(255, 255, 255);
+            }
+        }
+        @keyframes fex5{
+            from{
+                background-color: rgb(224, 61, 61);
+            }
+            to{
+                background-color: rgb(255, 255, 255);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="fex">
+            <div class="block1">Contact</div>
+            <div class="block2">Home</div>
+            <div class="block3">Index</div>
+            <div class="block4">Places</div>
+            <div class="block5">Gallery</div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
