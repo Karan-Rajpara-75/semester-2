@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50vh;
+            width: 70vw;
+            margin-top: 100px;
+            margin-left: 150px;
+            background-color: red;
+            animation: num 5s  2s 2 alternate both;
+            animation-direction: reverse;
+        }
+        @keyframes num{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: rgb(133, 241, 25);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
