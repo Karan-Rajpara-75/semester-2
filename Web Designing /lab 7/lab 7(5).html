@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Embed, Object and Iframe Demo</title>
+</head>
+<body>
+<h1>External Multimedia Content Demo</h1>
+<div class="box">
+    <h2>1. PDF using &lt;embed&gt;</h2>
+    <embed src="sample.pdf" type="application/pdf" width="100%" height="400px">
+</div>
+<div class="box">
+    <h2>2. PDF using &lt;object&gt;</h2>
+    <object data="sample.pdf" type="application/pdf" width="100%" height="400px">
+        <p>Your browser does not support PDFs.
+           <a href="sample.pdf">Download the PDF</a>
+        </p>
+    </object>
+</div>
+<div class="box">
+    <h2> Video using &lt;iframe&gt;</h2>
+    <iframe width="560" height="315"
+        src="./media/326081_medium.mp4"
+        title="video player"
+        allowfullscreen>
+    </iframe>
+</div>
+</body>
+</html>
