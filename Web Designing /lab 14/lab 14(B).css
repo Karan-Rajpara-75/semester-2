@@ -1,0 +1,100 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Arial;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.container {
+  background: #07004a;
+  padding: 30px;
+  border-radius: 20px;
+  width: min(900px, 95vw);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+}
+
+.g1 {
+  background: linear-gradient(135deg, #3cffd0, #7aa2ff);
+}
+
+.g2 {
+  background: linear-gradient(135deg, #6edcc4, #7ba9ff);
+}
+
+.g3 {
+  background: linear-gradient(135deg, #ffb56b, #d46cff);
+}
+
+.g4 {
+  background: linear-gradient(135deg, #ff7aa2, #ff9b6b);
+}
+
+.g5 {
+  background: linear-gradient(135deg, #c5c7ff, #f0b4ff);
+}
+
+.g6 {
+  background: linear-gradient(135deg, #ff3d3d, #ff9f1c);
+}
+
+.g7 {
+  background: linear-gradient(135deg, #b35cff, #4fd1c5);
+}
+
+.g8 {
+  background: linear-gradient(135deg, #ffd84d, #fff0a3);
+}
+
+.g9 {
+  background: linear-gradient(135deg, #ff7a7a, #ffb3b3);
+}
+
+.g10 {
+  background: linear-gradient(135deg, #c4ff9e, #a6f0ff);
+}
+
+.g11 {
+  background: linear-gradient(135deg, #ffe1a6, #ffd1ff);
+}
+
+.g12 {
+  background: linear-gradient(135deg, #ff5a5a, #ffb347);
+}
+
+.g13 {
+  background: linear-gradient(135deg, #e8e2c6, #b6e2c6);
+}
+
+.g14 {
+  background: linear-gradient(135deg, #ffb347, #7f7fff);
+}
+
+.g15 {
+  background: linear-gradient(135deg, #4fd1c5, #3cff77);
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
