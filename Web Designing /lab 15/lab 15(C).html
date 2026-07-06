@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo-Classes Example</title>
+
+    <style>
+        /* Form input default */
+        input {
+            padding: 8px;
+            margin: 10px;
+            border: 2px solid gray;
+            outline: none;
+        }
+
+        /* 1️⃣ :valid and :invalid */
+        input:valid {
+            border-color: green;
+            background-color: #e8fbe8;
+        }
+
+        input:invalid {
+            border-color: red;
+            background-color: #fde8e8;
+        }
+
+        /* 2️⃣ :active for button click */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:active {
+            background: darkblue;
+        }
+
+        /* 3️⃣ :focus for accessibility */
+        input:focus {
+            border-color: orange;
+            background-color: #fff3cd;
+        }
+    </style>
+
+</head>
+<body>
+
+<h2>Form Validation & Interaction</h2>
+
+<form>
+    <!-- Email field -->
+    <input type="email" placeholder="Enter Email" required><br>
+
+    <!-- Password field -->
+    <input type="password" placeholder="Enter Password" required><br>
+
+    <!-- Button -->
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
