@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Outfit:wght@300;400;600;800&display=swap');
+
+/* body and display */
+
+body{
+    font-family:'Outfit', sans-serif;
+    background: linear-gradient(120deg,#012A4A,#013A63,#01497C,#014F86,#2A6F97,#2C7DA0,#468FAF,#61A5C2,#89C2D9,#A9D6E5);
+    background-size: 400% 400%;
+    animation: bgMove 10s infinite linear;
+    min-height:100vh;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* navbar */
+
+.active{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+.nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.12);
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.nav nav a{
+    text-decoration:none;
+    margin-left:25px;
+    color:#fff;
+    font-weight:500;
+    position:relative;
+    transition:0.3s;
+}
+
+.nav nav a:hover{
+    color: rgb(192, 251, 156);
+    transition: 1s;
+}
+
+.nav nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:3px;
+    background: linear-gradient(90deg,rgb(192, 251, 156));
+    transition:.8s;
+}
+   
+
+.nav nav a:hover::after{
+    width:100%;
+}
+
+/* logo and logo style */
+
+.logo{
+    font-family:'Rubik Glitch', cursive;
+    font-size:34px;
+    color:#fff;
+    text-shadow:0 0 10px #ff00cc,
+                0 0 30px rgb(192, 251, 156);
+}
+
+/* letter color and header */
+
+.letter{
+    color: aliceblue;
+}
+.light{
+    color: rgb(192, 251, 156);
+}
+
+/* image, content, hover and image header */
+
+.cart{
+        transition: 0.5s ease;
+        cursor: pointer;
+}
+.photo:hover{
+        border-radius: 20px;
+        transform: scale(1.03);
+        box-shadow: 0 0 20px rgb(192, 251, 156);
+}
+.cart:hover{
+            transform: scale(1.001);
+            box-shadow: 0 0 20px rgb(192, 251, 156);
+}
+.car:hover{
+        color: rgb(192, 251, 156);
+}
+.car{
+        color: white;
+}
+.photo {
+    border-radius: 20px;
+}
+.cart{
+    border-radius: 20px;
+}
+.cont{
+    border-radius: 20px;
+}
+
+/* color */
+
+.h3{
+        color: rgb(192, 251, 156);
+}
+
+/* footer */
+
+footer {
+      background: linear-gradient(120deg,#013A63,#014F86,#2C7DA0,#014F86,#013A63);
+      color: #e5e7eb;
+      padding: 60px 0;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .footer-grid h4 {
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .footer-grid a {
+      display: block;
+      color: #cbd5f5;
+      text-decoration: none;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .footer-grid a:hover {
+      color: rgb(192, 251, 156);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+    .con{
+        padding-left: 8px;
+    }
+
+/* animetion` */
+
+    @keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* bootstrap link */
+ .convert{
+      height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+    .button{
+      padding-top: 12px;
+      height: 40px;
+      width: 200px;
+      text-align: center;
+      text-decoration: none;
+    border-radius: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(1, 50, 54);
+    margin-top: 25px;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+    }
+    .convert{
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+        .button:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+            transition: 1s;
+            color: rgb(255, 255, 255);
+            border: 2px none;
+    }
+

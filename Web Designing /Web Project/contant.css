@@ -1,0 +1,56 @@
+.back{
+    backdrop-filter: blur(30px);
+    background: rgba(0, 0, 0, 0.0);
+    color: black;
+}
+.redio{
+    color: rgb(6, 175, 201);
+}
+.but{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.submit{
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(1, 50, 54);
+    margin-top: 25px;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+}
+.reset{
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+    color: rgb(1, 50, 54);
+    margin-top: 25px;
+}
+
+.but{
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+        .submit:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+            transition: 2s;
+            color: rgb(255, 255, 255);
+            border: 2px none;
+    }
+.but{
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+        .reset:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+            transition: 2s;
+            color: rgb(255, 255, 255);
+            border: 2px none;
+    }
