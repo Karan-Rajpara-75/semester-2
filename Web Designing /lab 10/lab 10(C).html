@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-10-c</title>
+    <style>
+        .main {
+    height: 100vh;
+}
+
+/* Black bars */
+.black{
+    height: 7%;
+    background-color: black;
+}
+
+/* Header */
+.header{
+    background-color: rgb(185, 10, 10);
+    height: 12%;
+    margin: 5px 100px;
+    display: grid;
+    place-items: center;
+    font-size: x-large;
+}
+
+/* Content wrapper */
+.content{
+    height: 62%;
+    margin: 0 100px;
+    position: relative;
+    background: white;
+    overflow: hidden;
+}
+
+/* Blue Navigation */
+.nav{
+    background-color: blue;
+    width: 18%;
+    height: 100%;
+    float: left;
+    margin-right: 15px; /* Space before yellow */
+    display: grid;
+    place-items: center;
+    font-size: x-large;
+    color: white;
+}
+
+/* Main Yellow Content */
+.sidecontent{
+    background-color: yellow;
+    height: 100%;
+    margin-right: 0; /* remove margin */
+    display: grid;
+    place-items: center;
+    font-size: x-large;
+    width: 55%;
+
+    /* Add inner padding for space from green sidebar */
+    padding-right: 90px;  
+}
+
+/* Green Sidebar */
+.sidebar{
+    background-color: darkgreen;
+    width: 18%;
+    height: 72%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: grid;
+    place-items: center;
+    font-size: x-large;
+    color: white;
+}
+
+
+.box{
+    background-color: yellow;
+    width: 25%;    
+    height: 25%;
+    position: absolute;
+    right: 0;
+    bottom: 0;     
+}
+
+
+.footer{
+    background-color: lightblue;
+    height: 12%;
+    margin: 7px 100px 12px;
+    display: grid;
+    place-items: center;
+    font-size: x-large;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="black"></div>
+        <div class="header">Header</div>
+
+        <div class="content">
+            <div class="nav">Navigation</div>
+            <div class="sidecontent">Content</div>
+            <div class="sidebar">Sidebar</div>
+            <div class="box"></div>
+        </div>
+
+        <div class="footer">Footer</div>
+        <div class="black"></div>
+    </div>
+</body>
+</html>
