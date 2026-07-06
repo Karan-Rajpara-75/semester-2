@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Outfit:wght@300;400;600;800&display=swap');
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#3b3b3b;
+}
+.topbar{
+  background:black;
+  color:white;
+  padding:10px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.brand{
+  font-weight:bold;
+  font-size:18px;
+  font-family:'Rubik Glitch', cursive;
+  text-shadow:0 0 10px #e600ff,
+                0 0 30px #0dcff1;
+}
+.nav{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.nav a{
+  color:#dcdcdc;
+  text-decoration:none;
+  font-size:12px;
+}
+.download{
+  background:#6fb6ff;
+  color:white;
+  padding:6px 14px;
+  border-radius:20px;
+  text-decoration:none;
+  font-size:12px;
+}
+.banner-wrap{
+  background:#4a4a4a;
+  padding:18px 0;
+}
+.banner{
+  width:1100px;
+  height:210px;
+  margin:0 auto;
+  background-image:url(./210x1100.jpg);
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+.banner-text{
+  position:absolute;
+  font-family:'Rubik Glitch', cursive;
+  text-shadow:0 0 10px #e600ff,
+                0 0 30px #0dcff1;
+  right:30px;
+  bottom:18px;
+  color:rgb(255, 255, 255);
+  font-size:34px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+.cards-wrap{
+  width:1100px;
+  margin:20px auto 50px;
+}
+.cards{
+  display:flex;
+  gap:18px;
+}
+.card{
+  background:white;
+  width:25%;
+  border-radius:3px;
+  overflow:hidden;
+}
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+}
+.card-body{
+  padding:12px;
+}
+.card .date{
+  font-size:11px;
+  color:#777;
+}
+.card h3{
+  margin:6px 0 4px;
+  font-size:18px;
+}
+.card .tag{
+  font-size:11px;
+  color:#7aaef2;
+}
+.card p{
+  font-size:13px;
+  line-height:1.5;
+  color:#444;
+}
+.more{
+  display:inline-block;
+  margin-top:10px;
+  padding:6px 14px;
+  background:#7aaef2;
+  color:white;
+  border-radius:18px;
+  text-decoration:none;
+  font-size:12px;
+}
+a::selection{background-color: yellow; color: red;}
+.brand::selection{background-color: yellow; color: red;}
+.banner-text::selection{background-color: yellow; color: red;}
+h3::selection{background-color: yellow; color: red;}
+.data::selection{background-color: yellow; color: red;}
+.tag::selection{background-color: yellow; color: red;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">SoundAMP</div>
+  <div class="nav">
+    <a href="#">HTML Templates</a>
+    <a href="#">More HTML Templates</a>
+  </div>
+  <a href="#" class="download">DOWNLOAD NOW</a>
+</div>
+
+<div class="banner-wrap">
+  <div class="banner">
+    <div class="banner-text">ALL EVENT</div>
+  </div>
+</div>
+
+<div class="cards-wrap">
+  <div class="cards">
+    <div class="card">
+      <img src="./night laser show.avif" alt="">
+      <div class="card-body">
+        <div class="date">10/05/2018</div>
+        <h3>Night Laser Show</h3>
+        <div class="tag">#hip-hop #rnb #dance</div>
+        <p>We are happy to announce this special laser show.</p>
+        <a href="#" class="more">See more...</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./Live Music.jpg" alt="">
+      <div class="card-body">
+        <div class="date">14/05/2018</div>
+        <h3>Live Music</h3>
+        <div class="tag">#live #rock #alternative</div>
+        <p>Special event for our rock fans! Live music show.</p>
+        <a href="#" class="more">See more...</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./DJ - Master Class.jpeg" alt="">
+      <div class="card-body">
+        <div class="date">10/06/2018</div>
+        <h3>DJ - Master Class</h3>
+        <div class="tag">#dj #master-class</div>
+        <p>DJ WoodSmall will teach you new tricks. Please sign up.</p>
+        <a href="#" class="more">See more...</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./Best Night Party.webp" alt="">
+      <div class="card-body">
+        <div class="date">10/04/2018</div>
+        <h3>Best Night Party</h3>
+        <div class="tag">#party #club</div>
+        <p>Our traditional event: best hits all night long.</p>
+        <a href="#" class="more">See more...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

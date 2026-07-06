@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:white;
+}
+.container{
+  width:1100px;
+  margin:0 auto;
+}
+.header{
+  background:#b9b1b1;
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:bold;
+}
+.logo img{
+  width:40px;
+  height:40px;
+}
+.menu a{
+  margin-left:18px;
+  text-decoration:none;
+  color:white;
+  font-size:14px;
+}
+.hero-wrap{
+  border:3px solid green;
+  padding:10px;
+  margin:15px 0;
+}
+.hero{
+  background:white;
+  padding:15px;
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+.hero img{
+  width:220px;
+  height:140px;
+}
+.hero-text{
+  flex:1;
+}
+.hero-text p{
+  margin:0 0 10px 0;
+  line-height:1.5;
+  font-size:14px;
+}
+.hero-text button{
+  padding:6px 16px;
+  background:#bfe4f2;
+  border:1px solid #6aaec7;
+  border-radius:18px;
+}
+.main{
+  display:flex;
+  gap:20px;
+  padding:10px 0 30px;
+}
+.content{
+  width:65%;
+}
+.sidebar{
+  width:35%;
+}
+.box{
+  border:1px solid #ddd;
+  padding:12px;
+}
+h3{
+  margin:0 0 10px 0;
+}
+.content p{
+  font-size:14px;
+  line-height:1.6;
+}
+.content ul{
+  margin:8px 0 12px 20px;
+}
+.news-item{
+  display:flex;
+  gap:10px;
+  margin-bottom:12px;
+  align-items:flex-start;
+}
+.news-item img{
+  width:90px;
+  height:55px;
+}
+.date{
+  background:#eaeaea;
+  display:inline-block;
+  padding:2px 6px;
+  font-size:12px;
+  margin-bottom:4px;
+}
+.news-text p{
+  margin:4px 0 0 0;
+  font-size:13px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="./Shopify_logo_2018.svg" alt="">
+        <div>Shopify</div>
+      </div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Company</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero-wrap">
+      <div class="hero">
+        <img src="./photo_2026-02-26_07-50-14.jpg" alt="">
+        <div class="hero-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button>ReadMore</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="content box">
+        <h3>Welcome to our WEBSITE!</h3>
+        <p>This is a professional XHTML/CSS layout provided by TemplateMo.com for free of charge.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <ul>
+          <li>Excepteur sint occaecat cupidatat non proident</li>
+          <li>Duis aute irure dolor in reprehenderit</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <div class="sidebar box">
+        <h3>Latest News</h3>
+
+        <div class="news-item">
+          <img src="./photo_2026-02-26_07-50-03.jpg" alt="">
+          <div class="news-text">
+            <div class="date">OCT 29, 2024</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <img src="./photo_2026-02-26_07-50-03.jpg" alt="">
+          <div class="news-text">
+            <div class="date">OCT 29, 2024</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <img src="./photo_2026-02-26_07-50-03.jpg" alt="">
+          <div class="news-text">
+            <div class="date">OCT 29, 2024</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
